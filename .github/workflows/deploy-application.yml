@@ -79,6 +79,6 @@ jobs:
           name: id_rsa
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
 
-        - name: Try accessing server
+      - name: Try accessing server
 
-          run: ssh root@143.244.150.235 'ls -a'
+        run: ssh root@143.244.150.235 'ls -a'
