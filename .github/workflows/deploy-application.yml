@@ -72,20 +72,14 @@ jobs:
 
       - name: Deployment
 
-        uses: appleboy/ssh-action@master
+        uses: shimataro/ssh-key-action@v2.3.0
 
         with:
-
-          host: ${{ secrets.SSH_HOST }}
-
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_rsa
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
 
-          username: ${{ secrets.SSH_USERNAME }}
+      - name: Try accessing server
 
-          script: |
-
-            cd /var/www/html/
-
-            git checkout -f
-
-            git pull
+        run: ssh root@143.244.150.235 'bash -s' < deploy.sh
