@@ -30,7 +30,11 @@ jobs:
         env:
           GITHUB_SHA: ${{ github.sha }}
         run: tar -czf *${GITHUB_SHA}*.tar.gz --exclude=*.git --exclude=node_modules *
-        run: 'echo Sha is: $GITHUB_SHA'
+
+      - name: show sha key
+        env:
+          SHA: ${{ github.sha }}
+        run: 'echo Sha is: $SHA'
 
       - name: Store artifact for distribution
         uses: actions/upload-artifact@v2
