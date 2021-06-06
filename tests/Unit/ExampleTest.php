@@ -13,6 +13,8 @@ class ExampleTest extends TestCase
     /** @test */
     public function test_example()
     {
+
+        // added a comment
         $this->assertTrue(true);
     }
 }
