@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
     public function test_example()
     {
 
-        // added a comment
+        // added a comment a
         $this->assertTrue(true);
     }
 }
