@@ -29,7 +29,7 @@ jobs:
       - name: Create deployment artifacts
         env:
           GITHUB_SHA: ${{ github.sha }}
-        run: tar -czf *${GITHUB_SHA}*.tar.gz --exclude=*.git --exclude=node_modules *
+        run: tar -czf *$GITHUB_SHA*.tar.gz --exclude=*.git --exclude=node_modules *
 
       - name: show sha key
         env:
