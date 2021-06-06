@@ -72,6 +72,8 @@ jobs:
 
       - name: Deployment
 
+      uses: appleboy/ssh-action@main
+
         with:
 
           host: ${{ secrets.SSH_HOST }}
