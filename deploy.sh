@@ -13,7 +13,7 @@ PATH=/var/www/your_domain/
 FOLDER="helloWorld"
 GIT_URL="https://github.com/llssdd/helloWorld.git" # (i.e. https://cse031sust02@bitbucket.org/xyz.git)
 
-if [ -d ${PATH} ${FOLDER}]
+if [ -d /var/www/your_domain]
 then
     echo "Directory $PATH $FOLDER exists"
 else
