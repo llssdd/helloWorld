@@ -25,6 +25,6 @@ else
   exit 1
 fi
 echo -e "${HC}::::::::::::::::::::::::::Creating Project Directory::::::::::::::::::::::::::${NC}"
-cd "{DIR}/${FOLDER}"
+cd "${DIR}/${FOLDER}"
 pwd
 echo -e "${HC}::::::::::::::::::::::::::In Project Directory::::::::::::::::::::::::::${NC}"
