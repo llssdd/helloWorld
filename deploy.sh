@@ -16,4 +16,4 @@ GIT_URL="https://github.com/llssdd/helloWorld.git" # (i.e. https://cse031sust02@
 echo -e "${HC}::::::::::::::::::::::::::Creating Project Directory::::::::::::::::::::::::::${NC}"
 cd /var/www/your_domain
 sudo mkdir ${FOLDER}
-sudo chown -R ${FOLDER}
+sudo chown -r ${FOLDER}
