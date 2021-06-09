@@ -15,9 +15,9 @@ GIT_URL="https://github.com/llssdd/helloWorld.git" # (i.e. https://cse031sust02@
 
 if [ -d /var/www/your_domain]
 then
-    echo "Directory $PATH $FOLDER exists"
+    echo -e "Directory $PATH $FOLDER exists"
 else
-    echo "Error: Directory $PATH $FOLDER does not exists."
+    echo -e "Error: Directory $PATH $FOLDER does not exists."
 fi
 echo -e "${HC}::::::::::::::::::::::::::Creating Project Directory::::::::::::::::::::::::::${NC}"
 cd /var/www/your_domain/ ${FOLDER}
