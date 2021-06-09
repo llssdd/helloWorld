@@ -26,5 +26,5 @@ else
 fi
 echo -e "${HC}::::::::::::::::::::::::::Creating Project Directory::::::::::::::::::::::::::${NC}"
 cd "${DIR}/${FOLDER}"
-ls -a
+echo -e "We are here in: $(pwd)"
 echo -e "${HC}::::::::::::::::::::::::::In Project Directory::::::::::::::::::::::::::${NC}"
