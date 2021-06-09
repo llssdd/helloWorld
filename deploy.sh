@@ -17,6 +17,11 @@ GIT_URL="https://github.com/llssdd/helloWorld.git" # (i.e. https://cse031sust02@
 if [ -d "${PATH} ${FOLDER}" ]; then
   # Take action if $DIR exists. #
   echo "Installing config files in ${PATH} ${FOLDER}"
+else
+  ###  Control will jump here if $DIR does NOT exists ###
+  echo "Error: ${PATH} ${FOLDER} not found. Can not continue."
+  mkdir ${PATH} ${FOLDER}
+  exit 1
 fi
 echo -e "${HC}::::::::::::::::::::::::::Creating Project Directory::::::::::::::::::::::::::${NC}"
 cd "{PATH} ${FOLDER}"
