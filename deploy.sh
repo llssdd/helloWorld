@@ -16,7 +16,7 @@ GIT_URL="https://github.com/llssdd/helloWorld.git" # (i.e. https://cse031sust02@
 
 if [ -d "${DIR}/${FOLDER}" ]; then
   # Take action if $DIR exists. #
-  echo "Installing config files in ${PATH}/${FOLDER}"
+  echo "Installing config files in ${DIR}/${FOLDER}"
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "Error: ${DIR}/${FOLDER} not found. Can not continue."
